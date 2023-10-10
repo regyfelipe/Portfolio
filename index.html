@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regy Felipe</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img src="./assets/avatar.png" alt="" />
+        <p>@feph.ink</p>
+      </div>
+
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+      <ul>
+        <li>
+          <a href="#" id="playSpotify">Minha Playlist Spotify</a>
+        </li>
+        <li>
+          <a href="https://github.com/regyfelipe" target="_blank"
+            >Veja meus Projetos</a
+          >
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@regyfep" target="_blank">TikTok</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@wyrzeer" target="_blank">Youtube</a>
+        </li>
+      </ul>
+      
+      <div id="musicPlayer">
+        <iframe src="https://open.spotify.com/embed/playlist/5YEIjUIWRR7biWTChm9Y8g" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+      <img src="./assets/XOsX.gif" alt="Boneco Dançando" id="dancingCharacter" class="hidden">
+
+    </div>
+
+      <div id="social-links">
+        <a href="https://www.instagram.com/feph.ink/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://github.com/regyfelipe" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/regyrobson/" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="https://wa.me/qr/RZXVTB4HD5PRL1" target="_blank">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+      </div>
+      <footer>Feito pelo Regy Felipe junto com Rocketseat</footer>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    
+    <!-- Inclua o script.js após os outros scripts -->
+    <script src="./script.js"></script>
+  </body>
+</html>
