@@ -1,5 +1,5 @@
-<h1 align="center"> Portfolio </h1>
-https://regyfelipe.github.io/Portfolio/
+<h1 align="center" > Portfolio </h1>
+<h2 align="center" > https://regyfelipe.github.io/Portfolio/</h2>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
