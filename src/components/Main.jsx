@@ -4,6 +4,16 @@ import imagePaths from '../config/imagePaths';
 import './Main.css';
 
 export class MainContent extends React.Component {
+
+    getFaviconUrl = (url) => {
+        try {
+            const domain = new URL(url).origin;
+            return `${domain}/favicon.ico`;
+        } catch {
+            return '';  
+        }
+    };
+
     render() {
         return (
             <>
@@ -30,21 +40,42 @@ export class MainContent extends React.Component {
                         </div>
                     </div>
                     <div className="buttons">
-                        <a href={imagePaths.socialLinks.curriculo} download>
+                    <a href={imagePaths.socialLinks.curriculo} download>
                             <button className="btn" id="customBtn">Currículo</button>
                         </a>
                         
                         <a href={imagePaths.socialLinks.concurseiro} target="_blank" rel="noopener noreferrer">
-                            <button className="btn" id="customBtn">Concurseiro</button>
+                            <button className="btn" id="customBtn">
+                                <img
+                                    src={this.getFaviconUrl(imagePaths.socialLinks.concurseiro)}
+                                    alt="Favicon"
+                                    className="favicon-icon"
+                                />
+                                <span>Concurseiro</span>
+                            </button>
                         </a>
 
                         <a href={imagePaths.socialLinks.repositorioGithub} target="_blank" rel="noopener noreferrer">
-                            <button className="btn" id="customBtn">Repositorio Github</button>
-                        </a>
-                        <a href={imagePaths.socialLinks.alura} target="_blank" rel="noopener noreferrer">
-                            <button className="btn" id="customBtn">Desconto 15% Alura</button>
+                            <button className="btn" id="customBtn">
+                                <img
+                                    src={this.getFaviconUrl(imagePaths.socialLinks.repositorioGithub)}
+                                    alt="Favicon"
+                                    className="favicon-icon"
+                                />
+                                <span>Repositório Github</span>
+                            </button>
                         </a>
 
+                        <a href={imagePaths.socialLinks.alura} target="_blank" rel="noopener noreferrer">
+                            <button className="btn" id="customBtn">
+                                <img
+                                    src={this.getFaviconUrl(imagePaths.socialLinks.alura)}
+                                    alt="Favicon"
+                                    className="favicon-icon"
+                                />
+                                <span>Desconto 15% Alura</span>
+                            </button>
+                        </a>
                     </div>
                 </main>
             </>
