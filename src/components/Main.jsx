@@ -5,6 +5,15 @@ import './Main.css';
 
 export class MainContent extends React.Component {
 
+    state = {
+        isDarkMode: false
+    };
+
+    toggleTheme = () => {
+        this.setState((prevState) => ({ isDarkMode: !prevState.isDarkMode }));
+        document.body.classList.toggle('dark-mode');
+    };
+
     getFaviconUrl = (url) => {
         try {
             const domain = new URL(url).origin;
@@ -15,15 +24,21 @@ export class MainContent extends React.Component {
     };
 
     render() {
+        const { isDarkMode } = this.state;
+
         return (
             <>
-                <main className="container">
+                <main className={`container ${isDarkMode ? 'dark' : ''}`}>
                     <div className="banner">
                         <img src={imagePaths.banner} alt="Banner" className="banner-pic" />
                         <div className="profile-info">
                             <img className="profile-pic" src={imagePaths.profilePic} alt="Profile" />
                             <div className="infor">
-                                <h2>Regy Robson</h2>
+                                <h2>Regy Robson
+                                <button className="theme-toggle" onClick={this.toggleTheme}>
+                                        {isDarkMode ? '🌞' : '🌙'}
+                                    </button>
+                                </h2>
                                 <p>Fortaleza - Ce</p>
                             </div>
                             <div className="social-icons">
