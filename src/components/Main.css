@@ -133,11 +133,21 @@ body.dark-mode .btn:hover {
     text-align: center; 
 }
 
-.btn:hover {
-    background: #7644e7;
-    color: white;
+
+.btn {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
 }
 
+.btn:hover {
+    background: #a05aff;
+    box-shadow: 0 10px 25px rgba(160, 90, 255, 0.4);
+    transform: translateY(-2px);
+}
 
 
 /* Responsividade */

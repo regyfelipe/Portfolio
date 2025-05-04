@@ -14,10 +14,10 @@ const imagePaths = {
     linkedin,
   },
   socialLinks: {
-    instagram: "https://www.instagram.com/fep.ink/",
+    instagram: "https://www.instagram.com/llippe.r/",
     github: "https://github.com/regyfelipe",
     repositorioGithub: "https://github.com/regyfelipe?tab=repositories",
-    linkedin: "https://www.linkedin.com/in/regy-robson/",
+    linkedin: "https://www.linkedin.com/in/fepink/",
     curriculo: curriculoPDF, 
     concurseiro: "https://c-concurseiro.vercel.app/",
     alura: "https://www.alura.com.br/indica-dev/regyrobson",
